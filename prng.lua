@@ -75,7 +75,7 @@ function prng.random( from, to )
 			end
 		end
 		if from > to then
-			error( "bad argument #1 to 'random' (interval is empty)" )
+			error( "bad argument #2 to 'random' (interval is empty)" )
 		end
 		local interval = to - from + 1
 		return from + floor( interval*prng.f64())
